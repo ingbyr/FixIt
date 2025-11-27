@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="{{ .Site.LanguageCode }}">
   <head>
+      <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@latest/dist/autoload.js"></script>
     {{- if .IsHome | and (ne .Site.Params.disableThemeInject true) }}
     <meta name="theme" content='FixIt {{ hugo.Store.Get "version" }}'>
     {{- end }}
